@@ -1,11 +1,12 @@
 from pynfc import Nfc, Desfire, Timeout
 
 class Rfid:
-    
+    def __init__(self):
+        self.n = Nfc("pn532_uart:/dev/ttyS0:115200")
     # return uid in hexa str 
     def read_uid(self):
-        n = Nfc("pn532_uart:/dev/ttyS0:115200")
-        for target in n.poll():
+        
+        for target in self.n.poll():
             hexa=target.uid.decode(encoding='utf-8')
             return hexa.upper()
         
