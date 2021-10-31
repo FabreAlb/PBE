@@ -1,0 +1,19 @@
+box{
+    background-color: red;
+    font-family: sans-serif; 
+    font-size: 18px; 
+    color: white;
+}
+#box2{
+    background-color: blue;
+    font-family: sans-serif; 
+    font-size: 18px; 
+    color: white;
+}
+
+button{
+    color:grey;
+}/*
+button:hover{
+    background-color:#f4fc03;
+}*/
